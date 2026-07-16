@@ -90,8 +90,8 @@ nav img {
 }
 
 .hero-btn:hover {
-    border: 1px solid red;
-    background: red;
+    border: 1px solid rgb(191, 225, 140);
+    background: rgb(137, 102, 102);
     transition: 1s;
 }
 
@@ -99,7 +99,7 @@ nav.fa {
     display: none;
 }
 
-@media(max-width:700px) {
+@media(max-width:1040px) {
     .text-box h1 {
         font-size: 20px;
     }
@@ -215,7 +215,7 @@ nav .fa {
 }
 
 
-@media(max-width: 700px) {
+@media(max-width: 900px) {
     .row {
         flex-direction: column;
     }
@@ -600,7 +600,7 @@ nav .fa {
 .cta {
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(banner2.jpg);
+    background-image: linear-gradient(rgba(49, 39, 39, 0.7), rgba(59, 41, 41, 0.7)), url(./assets/Egg1.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
