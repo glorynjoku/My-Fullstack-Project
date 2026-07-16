@@ -138,20 +138,20 @@ nav .fa {
 
 
 /* our farm  */
-.farm {
+#farm {
     width: 90%;
     margin: auto;
     text-align: center;
     padding: 80px 0;
 }
 
-.farm h1 {
+#farm h1 {
     font-size: 40px;
     color: #1b5e20;
     margin-bottom: 10px;
 }
 
-.farm p {
+#farm p {
     color: #555;
     font-size: 16px;
     margin-bottom: 40px;
@@ -214,28 +214,6 @@ nav .fa {
     line-height: 1.7;
 }
 
-.course-col {
-    flex-basis: 31%;
-    background: rgb(235, 204, 208);
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
-h3 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-
-.course-col:hover {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-
-
 
 @media(max-width: 700px) {
     .row {
@@ -243,141 +221,103 @@ h3 {
     }
 }
 
-/* ----campus---- */
-
-.campus {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 50px;
-}
-
-.Campus-col {
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-
-}
-
-.Campus-col img {
-    width: 100%;
-    display: block;
-
-}
-
-.layer {
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-
-}
-
-.layer:hover {
-    background: rgba(226, 0, 0, 0.7);
-
-}
-
-.layer h3 {
-    width: 100%;
-    font-weight: 500;
-    color: white;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-
-}
-
-.layer:hover h3 {
-    bottom: 49%;
-    opacity: 1;
-}
-
-/* workers */
-.worker {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 50px;
-
-}
-
-.worker-col {
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-
-}
-
-.worker-col img {
-    width: 100%;
-    display: block;
-
-}
-
-.layer {
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-
-}
-
-.layer:hover {
-    background: rgba(226, 0, 0, 0.7);
-
-}
-
-.layer h3 {
-    width: 100%;
-    font-weight: 500;
-    color: white;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-
-}
-
-.layer:hover h3 {
-    bottom: 49%;
-
-
-}
-
-/* PRODUCTS SECTION */
-
-.products {
+/* ----workers---- */
+#worker {
     width: 90%;
     margin: auto;
     text-align: center;
     padding: 80px 0;
 }
 
-.products h1 {
+#worker h1 {
     font-size: 40px;
     color: #1b5e20;
     margin-bottom: 10px;
 }
 
-.products p {
+#worker p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* CARD LAYOUT */
+
+.worker-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+
+.worker-card {
+    width: 340px;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .15);
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.worker-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .25);
+}
+
+/* IMAGE */
+
+.worker-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.worker-card:hover img {
+    transform: scale(1.1);
+}
+
+/* CONTENT */
+
+.worker-content {
+    padding: 20px;
+}
+
+.worker-content h3 {
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.worker-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+
+
+
+/* PRODUCTS SECTION */
+
+#products {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#products h1 {
+    font-size: 40px;
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+#products p {
     color: #555;
     font-size: 16px;
     margin-bottom: 40px;
@@ -385,7 +325,7 @@ h3 {
 
 /* Layout */
 
-.products .row {
+#products .row {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -449,81 +389,210 @@ h3 {
 
 }
 
-/* facilities */
 
-.facilities {
-    width: 80%;
+
+
+/* facilities */
+#facilities {
+    width: 90%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
-
-
-
+    padding: 80px 0;
 }
 
-.Facilities-col {
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
+#facilities h1 {
+    font-size: 40px;
+    color: #1b5e20;
+    margin-bottom: 10px;
 }
 
-.Facilities-col img {
+#facilities p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* CARD LAYOUT */
+
+.facilities-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+
+.facilities-card {
+    width: 340px;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .15);
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.facilities-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .25);
+}
+
+/* IMAGE */
+
+.facilities-card img {
     width: 100%;
-    border-radius: 10px;
-
+    height: 240px;
+    object-fit: cover;
+    transition: transform .5s ease;
 }
 
-.Facilities-col p {
-    padding: 0;
+.facilities-card:hover img {
+    transform: scale(1.1);
 }
 
-.Facilities-col h3 {
-    margin-top: 16px;
+/* CONTENT */
+
+.facilities-content {
+    padding: 20px;
+}
+
+.facilities-content h3 {
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.facilities-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+
+/* ===========================
+   TESTIMONIALS SECTION
+=========================== */
+
+.testimonials {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.testimonials h1 {
+    font-size: 40px;
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+.testimonials>p {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+/* Row */
+
+.testimonial-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+
+.testimonials-col {
+    flex: 1 1 340px;
+    max-width: 360px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
     text-align: left;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.testimonials-col:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Image */
+
+.testimonials-col img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Content */
+
+.testimonial-content p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
     margin-bottom: 15px;
 }
 
-/* ----testmonials--- */
-
-.testimonials {
-    width: 80%;
-    margin: auto;
-    padding-top: 100px;
-    text-align: center;
+.testimonial-content h3 {
+    color: #2e7d32;
+    font-size: 20px;
 }
 
-.testimonials-col {
-    flex-basis: 44%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-    background: rgb(211, 106, 123);
-    padding: 25px;
-    cursor: pointer;
-    display: flex;
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 768px) {
+
+    .testimonials h1 {
+        font-size: 32px;
+    }
+
+    .testimonials-col {
+        max-width: 100%;
+    }
 }
 
-.testimonials-col img {
-    height: 40px;
-    margin-left: 5px;
-    margin-right: 30px;
-    border-radius: 50%;
+/* ===========================
+   MOBILE
+=========================== */
 
+@media (max-width: 600px) {
 
+    .testimonials {
+        width: 95%;
+    }
+
+    .testimonials-col {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonial-content h3 {
+        text-align: center;
+    }
+
+    .testimonials-col img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .testimonials h1 {
+        font-size: 28px;
+    }
 }
-
-.testimonials-col p {
-    padding: 0;
-}
-
-.testimonials-col h3 {
-    margin-top: 15px;
-    text-align: left;
-}
-
-.testimonials-col .fa {}
-
 
 
 /* call to action */
